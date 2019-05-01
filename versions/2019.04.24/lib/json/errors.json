@@ -1,0 +1,12 @@
+{
+  "DeveloperError": {
+    "error_type": "DeveloperError",
+    "error_text": "{}",
+    "exit_after": true
+  },
+  "UnexpectedOperator": {
+    "error_type": "SyntaxError",
+    "error_text": "The operator '{}' was not expected",
+    "exit_after": true
+  }
+}

@@ -1,0 +1,10 @@
+This is a list of things that need to be done in the future.
+They are organised by the developer who found them, not necessarily who is completing it.
+
+Anthony:
+    (24/04/2019) [2019.04.29] Not Urgent:   Add better docstrings
+        The current docstrings aren't great and could be massively improved
+    (24/04/2019) [2019.04.29] Not Urgent:   Allow strings to use single marks (') instead of just double (")
+        Strings currently only work with double quotes and it would be better if single quotes worked too
+    (24/04/2019) [2019.04.29] Not Urgent:   Allow code to not exit after an error
+        Errors can have the 'exit_after' value set. It currently doesn't make a difference, but should

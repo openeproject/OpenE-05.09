@@ -1,0 +1,30 @@
+{
+  "help": {
+    "arguments": ["-h", "--help"],
+    "case_sensitive": false,
+    "expected_values": 0,
+    "function": "Functions().Help().help()"
+  },
+  "debug": {
+    "arguments": ["-d", "--debug"],
+    "case_sensitive": false,
+    "expected_values": 0
+  },
+  "input_file": {
+    "arguments": ["-f", "--file"],
+    "case_sensitive": false,
+    "expected_values": 1
+  },
+  "output_file": {
+    "arguments": ["-o", "--output"],
+    "case_sensitive": false,
+    "expected_values": 1
+  },
+  "heartbreak": {
+    "arguments": ["--hb", "--heartbreak"],
+    "case_sensitive": true,
+    "expected_values": 0,
+    "function": "Functions().HB().hb()",
+    "hide_in_help": true
+  }
+}

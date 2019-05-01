@@ -1,0 +1,9 @@
+@version                "2019.05.01";
+@external   implicit    "~core";
+@external   implicit    "~stringlib";
+
+string one = "   Hello ";
+string two = "World! This is - an advanced (random)test of stuff;so  ";
+string final = join(one, two);
+final = strip(final);
+print(final);
