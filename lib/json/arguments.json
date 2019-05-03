@@ -1,0 +1,33 @@
+{
+  "help": {
+    "description": "List the available arguments that the program can be run with",
+    "arguments": ["-h", "--help"],
+    "case_sensitive": false,
+    "expected_values": 0,
+    "function": "Functions().Help().help()"
+  },
+  "debug": {
+    "description": "Run the program in debug mode\nThis should only be needed for developers, but could also help in fixing bugs in the code when sending a report",
+    "arguments": ["-d", "--debug"],
+    "case_sensitive": false,
+    "expected_values": 0
+  },
+  "parse": {
+    "description": "Parse the data anyways, even if running in debug mode",
+    "arguments": ["-p", "--parse"],
+    "case_sensitive": false,
+    "expected_values": 0
+  },
+  "input_file": {
+    "description": "The file to be parsed",
+    "arguments": ["-f", "--file"],
+    "case_sensitive": false,
+    "expected_values": 1
+  },
+  "output_file": {
+    "description": "The file to output data to\nCan be used with debug to get the debugged output in a file",
+    "arguments": ["-o", "--output"],
+    "case_sensitive": false,
+    "expected_values": 1
+  }
+}
