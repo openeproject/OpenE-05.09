@@ -1,5 +1,0 @@
-@version                "2019.05.01";
-@external   implicit    "~core";
-@external   implicit    "~datalib";
-matrix data = read_csv("C:\Users\Antho\Desktop\OpenE\versions\datasets\walmart_store_openings.csv");
-data;

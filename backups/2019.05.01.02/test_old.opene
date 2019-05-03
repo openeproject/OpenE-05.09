@@ -1,7 +1,0 @@
-@external   implicit    "~core";
-list x = range(0, 100, 5);
-list y = range(0, 10, 1);
-matrix m = Matrix(2, 10);
-m = to_column(m, x, 0);
-m = to_column(m, y, 1);
-m;
