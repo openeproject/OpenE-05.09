@@ -414,7 +414,7 @@ class Parser:
                                 print("Function: {}".format(tokens[i].value))
                             elif (tokens[i].value in DataManager.global_variables):
                                 variable_value = self.debug_variable(tokens[i].value)
-                                if (variable_value):
+                                if (variable_value is not False):
                                     data_out = "{} <- {}".format(tokens[i].value, self.debug_variable(tokens[i].value))
                                     print(data_out)
                                     if (self.output_location):
