@@ -1,9 +1,6 @@
-import hashlib
 import json
 import os
 import sys
-
-from Cryptodome.Cipher import AES
 
 
 argument_json_location = None
@@ -108,8 +105,10 @@ class Functions:
         def __init__(self):
             pass
 
+        # noinspection PyMethodMayBeStatic
         def help(self):
             try:
+                # noinspection PyTypeChecker
                 argument_dict = json.load(open(argument_json_location, "r"))
                 print("Help Functions:")
                 for argument, details in argument_dict.items():
