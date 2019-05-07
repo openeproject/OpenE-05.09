@@ -33,13 +33,13 @@ class Functions:
         value = parameters[0]
         delimiters = []
         if (len(parameters) > 1):
-            for delim in parameters[1:]:
-                if (delim.type == "string"):
-                    delimiters.append(delim.value[1:-1])
-                elif (delim.type == "list"):
-                    for item in delim.value:
+            for delimiter in parameters[1:]:
+                if (delimiter.type == "string"):
+                    delimiters.append(delimiter.value[1:-1])
+                elif (delimiter.type == "list"):
+                    for item in delimiter.value:
                         if (item.type == "string"):
-                            delimiters.append(delim.value[1:-1])
+                            delimiters.append(delimiter.value[1:-1])
                 else:
                     pass  # Todo: Raise error
         else:
