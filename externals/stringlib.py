@@ -39,7 +39,7 @@ class Functions:
                 elif (delimiter.type == "list"):
                     for item in delimiter.value:
                         if (item.type == "string"):
-                            delimiters.append(delimiter.value[1:-1])
+                            delimiters.append(item.value[1:-1])
                 else:
                     pass  # Todo: Raise error
         else:
