@@ -11,17 +11,21 @@ class Functions:
     # noinspection SpellCheckingInspection
     @staticmethod
     @DeveloperKit.require_python_module("matplotlib")
+    @DeveloperKit.require_python_module("numpy")
     def bar_chart(parameters: list = None) -> Token:
         import matplotlib.pyplot
+        import numpy
         plot_data = parameters[0].value
         matplotlib.pyplot.rcdefaults()
-        import numpy as np
         data = {}
         for row in plot_data:
-            data[DeveloperKit.value_of(row[0])] = int(DeveloperKit.value_of(row[1]))
+            try:
+                data[DeveloperKit.value_of(row[0])] = float(DeveloperKit.value_of(row[1]))
+            except ValueError:
+                print("The value '{}' is being ignored as it is not a number".format(DeveloperKit.value_of(row[1])))
         titles = list(data.keys())
         values = list(data.values())
-        y_pos = np.arange(len(titles))
+        y_pos = numpy.arange(len(titles))
         matplotlib.pyplot.barh(y_pos, values, align="center", alpha=0.5)
         matplotlib.pyplot.yticks(y_pos, titles)
         matplotlib.pyplot.show()
