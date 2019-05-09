@@ -1,3 +1,6 @@
+from typing import Union
+
+
 class Traceback:
     """
     This is the Traceback class
@@ -14,7 +17,7 @@ class Token:
     """
     def __init__(self,
                  _type: str,
-                 value: str,
+                 value: Union[str, list],
                  line: int = 0,
                  col: int = 0,
                  char: str = None):
