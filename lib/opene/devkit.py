@@ -47,7 +47,6 @@ class DeveloperKit:
                 pip_arguments.append(extra_arg)
         if (silent):
             pass  # Todo: add option to silence pip outputs
-        print(pip_arguments)
         pip.main(pip_arguments)
 
     @staticmethod
